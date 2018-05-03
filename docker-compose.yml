@@ -1,0 +1,15 @@
+version: "2.2"
+
+services:
+  app:
+    image: node:8
+    volumes:
+      - ./:$PWD
+    working_dir: $PWD
+    ports:
+      - "3000:3000"
+    command: yarn start
+
+  tests:
+    extends: app
+    command: yarn test
