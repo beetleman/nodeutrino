@@ -13,3 +13,11 @@ services:
   tests:
     extends: app
     command: yarn test
+
+  tests:
+    extends: app
+    command: yarn test --watch
+
+  lint-fix:
+    extends: app
+    command: yarn lint --fix
