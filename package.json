@@ -1,0 +1,18 @@
+{
+  "name": "nodeutrino",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "neutrino build",
+    "start": "neutrino start",
+    "lint": "neutrino lint",
+    "test": "neutrino test"
+  },
+  "devDependencies": {
+    "@neutrinojs/airbnb-base": "^8.2.3",
+    "@neutrinojs/jest": "^8.2.3",
+    "@neutrinojs/node": "^8.2.3",
+    "neutrino": "^8.2.3"
+  }
+}
